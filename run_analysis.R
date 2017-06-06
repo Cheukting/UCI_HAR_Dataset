@@ -41,5 +41,5 @@ new <- aggregate(x,list(activity = data$activity,subject_id = data$subject_id),m
 
 #write the result in a file 
 
-write.table(new, file = "tidydata.txt")
+write.table(new, file = "tidydata.txt",row.names = FALSE)
 
